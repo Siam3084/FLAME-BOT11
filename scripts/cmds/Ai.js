@@ -1,4 +1,3 @@
- 
 const Préfixes = [
   '/ai',
   'Kim',
