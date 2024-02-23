@@ -9,7 +9,7 @@ module.exports = {
     author: "Subash",
     countDown: 1,
     role: 2,
-    category: "𝗖𝗢𝗡𝗙𝗜𝗚",
+    category: "𝗔𝗗𝗠𝗜𝗡",
     shortDescription: "Delete files and images",
     longDescription: "Clean cache & delete specific files or delete downloaded images.",
     
