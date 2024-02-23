@@ -1,8 +1,8 @@
-const fs = require("fs-extra");
+∆cmd install help.js const fs = require("fs-extra");
 const axios = require("axios");
 const path = require("path");
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ ERWIN SMITH|ELIAS BARUTI]";
+const doNotDelete = "[]";
 
 module.exports = {
   config: {
@@ -45,14 +45,14 @@ module.exports = {
 
       Object.keys(categories).forEach((category) => {
         if (category !== "info") {
-          msg += `\n╭═══❍『${category.toUpperCase()}』\n┃ `;
+          msg += `\n╭━━━O『${category.toUpperCase()}』`;
           const names = categories[category].commands.sort();
 
           for (let i = 0; i < names.length; i += 1) {
-            const cmds = names.slice(i, i + 1).map((item) => `✧ ${item}`);
+            const cmds = names.slice(i, i + 1).map((item) => `●${item}`);
             msg += `\n┃ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
-          msg += `\n╰════════════❍`;
+          msg +=`\n╰━━━━━━━━━━━❍`;
         }
       });
 
@@ -62,7 +62,7 @@ module.exports = {
 
 msg+=`𝗣𝗢𝗨𝗥 𝗦𝗔𝗩𝗢𝗜𝗥 𝗨𝗦𝗘𝗥 𝗗𝗘 \n𝗖𝗘𝗦 𝗖𝗠𝗗𝗘𝗦 , 𝗦𝗔𝗜𝗦𝗜𝗦𝗦𝗘𝗭 : \n𝗛𝗘𝗟𝗣 + 𝗡𝗢𝗠 𝗗𝗘 𝗟𝗔 𝗖𝗠𝗗𝗘 \n𝗘𝗫: help ai \n\n`
 
-      msg += `[ 😼 | ✨𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜✨ ]\nfacebook.com/elias.baruti45`;
+      msg += `\n╔════☾✿☽════╗\n┃  𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜 ┃\n╚════☾❀☽════╝\nfacebook.com/elias.baruti45`;
 
       await message.reply(msg);
     } else {
@@ -112,4 +112,4 @@ function roleTextToString(roleText) {
     default:
       return "Unknown role";
   }
-}
+        }
