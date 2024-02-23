@@ -9,7 +9,7 @@ module.exports = {
     role: 0,
     shortDescription: { vi: "", en: "" },
     longDescription: { vi: "", en: "" },
-    category: "𝗢𝗧𝗛𝗘𝗥𝗦",
+    category: "𝗨𝗦𝗘𝗙𝗨𝗟",
     guide: { en: "" },
     envConfig: {}
   },
