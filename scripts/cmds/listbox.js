@@ -12,7 +12,7 @@ module.exports = {
     longDescription: {
       en: "Use this command to list all group chats the bot is currently in."
     },
-    category: "owner",
+    category: "𝗔𝗗𝗠𝗜𝗡",
     guide: {
       en: "{p}{n} "
     }
