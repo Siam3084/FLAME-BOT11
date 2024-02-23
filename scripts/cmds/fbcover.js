@@ -17,7 +17,7 @@ module.exports = {
       en: 'Create Facebook banner',
       fr: 'créer une photo de couverture Facebook'
     },
-    category: '𝗨𝗦𝗘𝗥𝗙𝗨𝗟',
+    category: '𝗨𝗦𝗘𝗙𝗨𝗟',
     guide: {
       en: '{p}{n} <name> | <subname> | <address> | <phone> | <email> | <color>',
       fr: '{p}{n} <nom> | <sous-nom> | <adresse> | <téléphone> | <email> | <couleur>'
