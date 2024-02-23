@@ -15,7 +15,7 @@ const { openAIUsing, openAIHistory } = global.temp;
 
 module.exports = {
 	config: {
-		name: "𝗨𝗦𝗘𝗥𝗙𝗨𝗟",
+		name: "gpt",
 		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
@@ -28,7 +28,7 @@ module.exports = {
 			vi: "GPT chat",
 			en: "GPT chat"
 		},
-		category: "box chat",
+		category: "𝗨𝗦𝗘𝗙𝗨𝗟",
 		guide: {
 			vi: "   {pn} <draw> <nội dung> - tạo hình ảnh từ nội dung"
 				+ "\n   {pn} <clear> - xóa lịch sử chat với gpt"
