@@ -15,7 +15,7 @@ module.exports = {
 			vi: "Nhận quà hàng ngày",
 			en: "Receive daily gift"
 		},
-		category: "𝗚𝗔𝗠𝗘𝗦",
+		category: "𝗙𝗨𝗡",
 		guide: {
 			vi: "   {pn}: Nhận quà hàng ngày"
 				+ "\n   {pn} info: Xem thông tin quà hàng ngày",
