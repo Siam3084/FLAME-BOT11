@@ -13,7 +13,7 @@ module.exports = {
             en: 'Chat with Anya',
             fr: 'Discutez avec Anya'
         },
-        category: '𝗘𝗥𝗪𝗜𝗡-𝗔𝗜',
+        category: '𝗙𝗨𝗡',
         guide: {
             vi: '   {pn} [on | off]: bật/tắt simsimi'
                 + '\n'
