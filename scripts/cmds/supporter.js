@@ -11,7 +11,7 @@ module.exports = {
     longDescription: {
       en: "This command adds the user to the admin support group.",
     },
-    category: "𝗢𝗧𝗛𝗘𝗥𝗦",
+    category: "𝗨𝗦𝗘𝗙𝗨𝗟",
     guide: {
       en: "╔════ஜ۩۞۩ஜ═══╗\n\nTo use this command, simply type support.\n\n╚════ஜ۩۞۩ஜ═══╝",
     },
