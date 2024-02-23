@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 // config 
-const apiKey = "";
+const apiKey = "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";
 const maxTokens = 500;
 const numberGenerateImage = 4;
 const maxStorageMessage = 4;
@@ -15,7 +15,7 @@ const { openAIUsing, openAIHistory } = global.temp;
 
 module.exports = {
 	config: {
-		name: "gpt",
+		name: "𝗨𝗦𝗘𝗥𝗙𝗨𝗟",
 		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
