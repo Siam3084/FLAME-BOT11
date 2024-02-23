@@ -63,7 +63,7 @@ module.exports = {
 			error: "Une erreur est survenue, veuillez réessayer ultérieurement"
 		}
 	},
-	antichangeinfobox: {
+  antichgeinfobox: {
 		shortDescription: "Anti modification de la boîte d'informations",
 		longDescription: "Activer/désactiver l'anti modification de la boîte d'informations",
 		guide: "   {pn} avt [on | off] : anti modification de l'avatar de la boîte de discussion\n   {pn} name [on | off] : anti modification du nom de la boîte de discussion\n   {pn} theme [on | off] : anti modification du thème de la boîte de discussion\n   {pn} emoji [on | off] : anti modification de l'emoji de la boîte de discussion",
@@ -366,13 +366,13 @@ grouptag: {
         infoGroupTag: "📑 | Nom du groupe : \"%1\"\n👥 | Nombre de membres : %2\n👨‍👩‍👧‍👦 | Liste des membres :\n %3"
     }
  },
-  help2: {
+  help3: {
     shortDescription: "Voir l'utilisation des commandes",
     longDescription: "Voir l'utilisation des commandes",
     guide: "{pn} [vide | <numéro de page> | <nom de la commande>]",
     text: {
         help: "╭════════════════❍\n%1╭═════════════❍\n┃ Page [ %2/%3 ]\n│ Actuellement, le bot a %4 commandes utilisables\n┃ » Tapez %5help <page> pour voir la liste des commandes\n│ » Tapez %5help pour voir les détails de l'utilisation de cette commande\n┃ %6\n╰═══════════════❍",
-        help2: "%1\n╭ ───── ╮\n│ 𝗚𝗨𝗜𝗗𝗘  │\n╰ ───── ╯\n𝗣𝗢𝗨𝗥 𝗟'𝗜𝗡𝗦𝗧𝗔𝗡𝗧 𝗘𝗥𝗪𝗜𝗡 𝗔 %2\n 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗘𝗦 𝗨𝗧𝗜𝗟𝗜𝗦𝗔𝗕𝗟𝗘𝗦\n\n𝗣𝗢𝗨𝗥 𝗦𝗔𝗩𝗢𝗜𝗥 𝗨𝗦𝗘𝗥 𝗗𝗘 \n𝗖𝗘𝗦 𝗖𝗠𝗗𝗘𝗦 , 𝗦𝗔𝗜𝗦𝗜𝗦𝗦𝗘𝗭 : \n %3𝗛𝗘𝗟𝗣 + 𝗡𝗢𝗠 𝗗𝗘 𝗟𝗔 𝗖𝗠𝗗𝗘\n𝗘𝗫: %3help ai\n\n%4[ 😼 | ✨𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜✨ ]\nfacebook.com/elias.baruti45",
+        help2: "%1\n╭ ───── ╮\n│ 𝗚𝗨𝗜𝗗𝗘  │\n╰ ───── ╯\n𝗣𝗢𝗨𝗥 𝗟'𝗜𝗡𝗦𝗧𝗔𝗡𝗧 𝗘𝗥𝗪𝗜𝗡 𝗔 %2\n 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗘𝗦 𝗨𝗧𝗜𝗟𝗜𝗦𝗔𝗕𝗟𝗘𝗦\n\n𝗣𝗢𝗨𝗥 𝗦𝗔𝗩𝗢𝗜𝗥 𝗨𝗦𝗘𝗥 𝗗𝗘 \n𝗖𝗘𝗦 𝗖𝗠𝗗𝗘𝗦 , 𝗦𝗔𝗜𝗦𝗜𝗦𝗦𝗘𝗭 : \n %3𝗛𝗘𝗟𝗣 + 𝗡𝗢𝗠 𝗗𝗘 𝗟𝗔 𝗖𝗠𝗗𝗘\n𝗘𝗫: %3help bank\n%4╔════☾✿☽════╗\n┃  𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜 ┃\n╚════☾❀☽════╝\nfacebook.com/elias.baruti45",
         commandNotFound: "La commande \"%1\" n'existe pas",
         getInfoCommand: "╭── NOM ────⭓\n│ %1\n├── INFO\n│ Description : %2\n│ Autres noms : %3\n│ Autres noms dans votre groupe : %4\n│ Version : %5\n│ Rôle : %6\n│ Temps par commande : %7s\n│ Auteur : %8\n├── Utilisation\n%9\n├── Remarques\n│ Le contenu à l'intérieur de <XXXXX> peut être modifié\n│ Le contenu à l'intérieur de [a|b|c] est a ou b ou c\n╰──────⭔",
         doNotHave: "N'a pas",
@@ -732,8 +732,24 @@ warn: {
         hasBanned: "⚠️ Les membres suivants ont été avertis 3 fois auparavant et bannis du groupe :\n%1",
         failedKick: "⚠️ Une erreur s'est produite lors de l'expulsion des membres suivants :\n%1"
     }
- }
-};  
+ },
+  ytb: {
+    shortDescription: "YouTube",
+    longDescription: "Téléchargez des vidéos, de l'audio ou consultez des informations sur les vidéos YouTube",
+    guide: "   {pn} [video|-v] [<nom de la vidéo>|<lien de la vidéo>]: utilisé pour télécharger une vidéo depuis YouTube.\n   {pn} [audio|-a] [<nom de la vidéo>|<lien de la vidéo>]: utilisé pour télécharger de l'audio depuis YouTube\n   {pn} [info|-i] [<nom de la vidéo>|<lien de la vidéo>]: utilisé pour voir les informations d'une vidéo depuis YouTube\n   Exemple:\n    {pn} -v Fallen Kingdom\n    {pn} -a Fallen Kingdom\n    {pn} -i Fallen Kingdom",
+    text: {
+        error: "Une erreur s'est produite : %1",
+        noResult: "Aucun résultat de recherche ne correspond au mot-clé %1",
+        choose: "%1Répondez au message avec le numéro pour choisir ou tout contenu pour annuler",
+        downloading: "Téléchargement de la vidéo %1",
+        noVideo: "Désolé, aucune vidéo n'a été trouvée avec une taille inférieure à 83 Mo",
+        downloadingAudio: "Téléchargement de l'audio %1",
+        noAudio: "Désolé, aucun fichier audio n'a été trouvé avec une taille inférieure à 26 Mo",
+        info: "💠 Titre : %1\n🏪 Chaîne : %2\n👨‍👩‍👧‍👦 Abonnés : %3\n⏱ Durée de la vidéo : %4\n👀 Vues : %5\n👍 J'aime : %6\n🆙 Date de publication : %7\n🔠 ID : %8\n🔗 Lien : %9",
+        listChapter: "\n📖 Liste des chapitres : %1\n"
+    }
+	}
+};
 
 
 
@@ -744,4 +760,3 @@ warn: {
 
 
 
-    
