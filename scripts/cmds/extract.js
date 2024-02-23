@@ -8,7 +8,7 @@ module.exports = {
     role: 2,
     author: "LiANE",
     shortDescription: { en: "Reads and sends the content of a Pastebin link" },
-    category: "owner",
+    category: "𝗔𝗗𝗠𝗜𝗡",
     guide: { en: "{pn} <link> - Reads and sends the content of the given Pastebin link" }
   },
   onStart: async function({ api, args, message }) {
