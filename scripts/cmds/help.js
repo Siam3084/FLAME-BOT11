@@ -58,11 +58,12 @@ module.exports = {
 
       const totalCommands = commands.size;
 
-      msg += `\n╭ ───── ╮\n│ 𝗚𝗨𝗜𝗗𝗘  │\n╰ ───── ╯\n𝗣𝗢𝗨𝗥 𝗟'𝗜𝗡𝗦𝗧𝗔𝗡𝗧 𝗘𝗥𝗪𝗜𝗡 𝗔${totalCommands}\n 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗘𝗦 𝗨𝗧𝗜𝗟𝗜𝗦𝗔𝗕𝗟𝗘𝗦\n\n`;
+      msg += `\n╭ ───── ╮\n│ 𝗚𝗨𝗜𝗗𝗘  │\n╰ ───── ╯\n`;
 
-msg+=`𝗣𝗢𝗨𝗥 𝗦𝗔𝗩𝗢𝗜𝗥 𝗨𝗦𝗘𝗥 𝗗𝗘 \n𝗖𝗘𝗦 𝗖𝗠𝗗𝗘𝗦 , 𝗦𝗔𝗜𝗦𝗜𝗦𝗦𝗘𝗭 : \n𝗛𝗘𝗟𝗣 + 𝗡𝗢𝗠 𝗗𝗘 𝗟𝗔 𝗖𝗠𝗗𝗘 \n𝗘𝗫: help ai \n\n`
+msg+=`𝗣𝗢𝗨𝗥 𝗦𝗔𝗩𝗢𝗜𝗥 𝗨𝗦𝗘𝗥 𝗗𝗘 \n𝗖𝗘𝗦 ${totalCommands}𝗖𝗠𝗗𝗘𝗦 ,𝗦𝗔𝗜𝗦𝗜𝗦𝗦𝗘𝗭 : \n𝗛𝗘𝗟𝗣 + 𝗡𝗢𝗠 𝗗𝗘 𝗟𝗔 𝗖𝗠𝗗𝗘 \n𝗘𝗫: ${getPrefix}help quiz \n━━━━━━━━━━━━━━
+\n`
 
-      msg += `\n╔════☾✿☽════╗\n┃  𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜 ┃\n╚════☾❀☽════╝\nfacebook.com/elias.baruti45`;
+      msg += `╭✿━━━━━━━━━✿╮\n┃  𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜  ┃\n╰✿━━━━━━━━━✿╯\nfacebook.com/elias.baruti45`;
 
       await message.reply(msg);
     } else {
