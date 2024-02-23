@@ -13,7 +13,7 @@ module.exports = {
       vi: "",
       en: ""
     },
-    category: "𝗖𝗢𝗡𝗙𝗜𝗚"
+    category: "𝗔𝗗𝗠𝗜𝗡"
   },
  
 langs: {
