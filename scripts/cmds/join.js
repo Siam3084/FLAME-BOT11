@@ -12,7 +12,7 @@ module.exports = {
     longDescription: {
       en: "This command adds the user to the group wher bot exist",
     },
-    category: "𝗖𝗢𝗡𝗙𝗜𝗚",
+    category: "𝗔𝗗𝗠𝗜𝗡",
     guide: {
       en: "To use this command, simply type !join <threadID>.",
     },
