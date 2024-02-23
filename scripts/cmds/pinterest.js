@@ -15,7 +15,7 @@ module.exports = {
       en: "Search for images on Pinterest"}, 
     longDescription:{
       en:""}, 
-    category: "𝗚𝗘𝗡𝗜𝗠𝗚", 
+    category: "𝗦𝗘𝗔𝗥𝗖𝗛", 
     guide: {
       en: "{prefix}pinterest <search query> -<number of images>"
     }
