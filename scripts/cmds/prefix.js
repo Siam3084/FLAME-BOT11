@@ -8,16 +8,17 @@ module.exports = {
     author: "NTKhang",
     countDown: 5,
     role: 0,
-    shortDescription: "Pour voir le préfixe du bot",
-    category: "CONFIG",
+    shortDescription: "To see the bot's prefix",
+    
+    category: "𝗖𝗢𝗡𝗙𝗜𝗚",
     guide: {
-      en: "   {pn} <new prefix>: change new prefix in your chat box"
+      en: "   {pn} <new prefix>: change new prefix in your box chat"
         + "\n   Example:"
         + "\n    {pn} #"
         + "\n\n   {pn} <new prefix> -g: change new prefix in system bot (only admin bot)"
         + "\n   Example:"
         + "\n    {pn} # -g"
-        + "\n\n   {pn} reset: change prefix in your chat box to default",
+        + "\n\n   {pn} reset: change prefix in your box chat to default",
       fr: "  {pn} <nouveau préfixe> : changez le nouveau préfixe dans votre boîte de discussion"
          + "\n Exemple :"
          + "\n {pn} #"
@@ -25,27 +26,31 @@ module.exports = {
          + "\n Exemple :"
          + "\n {pn} # -g"
          + "\n\n {pn} réinitialiser : changer le préfixe de votre boîte de discussion par défaut"
-    }
+
+      
+}
+
   },
 
   langs: {
-    fr: {
-      reset: "Votre préfixe a été réinitialisé par défaut : %1",
-      onlyAdmin: "Seul l'administrateur peut changer le préfixe du bot système",
-      confirmGlobal: "Veuillez réagir à ce message pour confirmer le changement de préfixe du bot système",
-      confirmThisThread: "Veuillez réagir à ce message pour confirmer le changement de préfixe dans votre boîte de discussion",
-      successGlobal: "Le préfixe du bot système a été remplacé par : %1",
-      successThisThread: "Le préfixe de votre boîte de discussion a été modifié par : %1",
-      myPrefix: "╭═════════❍\n┃Dans cette group: %2\n┃─────────\n┃Préfixe actuel: %1\n╰═════════❍\n『ELIAS BARUTI』"
-    },
-    en: {
+   fr:{
+    reset: "Votre préfixe a été réinitialisé par défaut : %1",
+       onlyAdmin: "Seul l'administrateur peut changer le préfixe du bot système",
+       confirmGlobal: "Veuillez réagir à ce message pour confirmer le changement de préfixe du bot système",
+       confirmThisThread: "Veuillez réagir à ce message pour confirmer le changement de préfixe dans votre boîte de discussion",
+       successGlobal: "Le préfixe du bot système a été remplacé par : %1",
+       successThisThread: "Le préfixe de votre boîte de discussion a été modifié par : %1",
+       myPrefix: "╭━━━━━━━━━━━╮\n┃𝖬𝖮𝖭 𝖯𝖱É𝖥𝖨𝖷𝖤:%2\n┃━━━━━━━━━━━\n┃ 𝗘𝗟𝗜𝗔𝗦.𝗕𝗔𝗥𝗨𝗧𝗜 \n╰━━━━━━━━━━━╯"
+   },
+    
+    en:{
       reset: "Your prefix has been reset to default: %1",
       onlyAdmin: "Only admin can change prefix of system bot",
       confirmGlobal: "Please react to this message to confirm change prefix of system bot",
-      confirmThisThread: "Please react to this message to confirm change prefix in your chat box",
+      confirmThisThread: "Please react to this message to confirm change prefix in your box chat",
       successGlobal: "Changed prefix of system bot to: %1",
-      successThisThread: "Changed prefix in your chat box to: %1",
-      myPrefix: "╭═══════❍\n┃In this group: %2\n┃───────\n┃Your prefix: [%1]\n╰══════❍\n『ELIAS BARUTI』"
+      successThisThread: "Changed prefix in your box chat to: %1",
+      myPrefix: "╭━━━━━━━━━━╮\n┃𝖬𝖸 𝖯𝖱𝖤𝖥𝖨𝖷 : %2\n┃━━━━━━━━━━\n┃𝗘𝗟𝗜𝗔𝗦.𝗕𝗔𝗥𝗨𝗧𝗜 \n╰━━━━━━━━━━╯"
     }
   },
 
@@ -65,14 +70,13 @@ module.exports = {
       newPrefix
     };
 
-    if (args[1] === "-g") {
+    if (args[1] === "-g")
       if (role < 2)
         return message.reply(getLang("onlyAdmin"));
       else
         formSet.setGlobal = true;
-    } else {
+    else
       formSet.setGlobal = false;
-    }
 
     return message.reply(args[1] === "-g" ? getLang("confirmGlobal") : getLang("confirmThisThread"), (err, info) => {
       formSet.messageID = info.messageID;
@@ -88,17 +92,17 @@ module.exports = {
       global.GoatBot.config.prefix = newPrefix;
       fs.writeFileSync(global.client.dirConfig, JSON.stringify(global.GoatBot.config, null, 2));
       return message.reply(getLang("successGlobal", newPrefix));
-    } else {
+    }
+    else {
       await threadsData.set(event.threadID, newPrefix, "data.prefix");
       return message.reply(getLang("successThisThread", newPrefix));
     }
   },
 
   onChat: async function ({ event, message, getLang }) {
-    if (event.body && event.body.toLowerCase() === "prefix") {
+    if (event.body && event.body.toLowerCase() === "prefix")
       return () => {
         return message.reply(getLang("myPrefix", global.GoatBot.config.prefix, utils.getPrefix(event.threadID)));
       };
-    }
   }
 };
