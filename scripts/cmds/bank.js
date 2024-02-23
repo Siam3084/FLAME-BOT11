@@ -51,7 +51,7 @@ config: {
       vi: "",
       en: "bank ni lia"
     },
-    category: "𝗚𝗔𝗠𝗘𝗦",
+    category: "𝗙𝗨𝗡",
     guide: {
       vi: "",
       en: ""
