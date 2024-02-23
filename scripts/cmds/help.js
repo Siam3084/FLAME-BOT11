@@ -60,7 +60,7 @@ module.exports = {
 
       msg += `\n╭ ───── ╮\n│ 𝗚𝗨𝗜𝗗𝗘  │\n╰ ───── ╯\n`;
 
-msg+=`𝗣𝗢𝗨𝗥 𝗦𝗔𝗩𝗢𝗜𝗥 𝗨𝗦𝗘𝗥 𝗗𝗘 \n𝗖𝗘𝗦 ${totalCommands}𝗖𝗠𝗗𝗘𝗦 ,𝗦𝗔𝗜𝗦𝗜𝗦𝗦𝗘𝗭 : \n𝗛𝗘𝗟𝗣 + 𝗡𝗢𝗠 𝗗𝗘 𝗟𝗔 𝗖𝗠𝗗𝗘 \n𝗘𝗫: ${getPrefix}help quiz \n━━━━━━━━━━━━━━
+msg+=`𝗣𝗢𝗨𝗥 𝗦𝗔𝗩𝗢𝗜𝗥 𝗨𝗦𝗘𝗥 𝗗𝗘 \n𝗖𝗘𝗦 ${totalCommands}𝗖𝗠𝗗𝗘𝗦 ,𝗦𝗔𝗜𝗦𝗜𝗦𝗦𝗘𝗭 : \n𝗛𝗘𝗟𝗣 + 𝗡𝗢𝗠 𝗗𝗘 𝗟𝗔 𝗖𝗠𝗗𝗘 \n𝗘𝗫: ∆help quiz \n━━━━━━━━━━━━━━
 \n`
 
       msg += `╭✿━━━━━━━━━✿╮\n┃  𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜  ┃\n╰✿━━━━━━━━━✿╯\nfacebook.com/elias.baruti45`;
