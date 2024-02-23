@@ -8,22 +8,32 @@ module.exports = {
 		role: 1,
 		shortDescription: {
 			vi: "bật/tắt chỉ admin box sử dụng bot",
-			en: "turn on/off only admin box can use bot"
+			en: "turn on/off only admin box can use bot",
+      fr: "activer/désactiver seule la boîte d'administration peut utiliser le bot"
 		},
 		longDescription: {
 			vi: "bật/tắt chế độ chỉ quản trị của viên nhóm mới có thể sử dụng bot",
-			en: "turn on/off only admin box can use bot"
+			en: "turn on/off only admin box can use bot",
+      fr: "activer/désactiver seule la boîte d'administration peut utiliser le bot"
 		},
-		category: "box chat",
+		category: "𝗚𝗥𝗢𝗨𝗣",
 		guide: {
 			vi: "   {pn} [on | off]: bật/tắt chế độ chỉ quản trị viên nhóm mới có thể sử dụng bot"
 				+ "\n   {pn} noti [on | off]: bật/tắt thông báo khi người dùng không phải là quản trị viên nhóm sử dụng bot",
 			en: "   {pn} [on | off]: turn on/off the mode only admin of group can use bot"
-				+ "\n   {pn} noti [on | off]: turn on/off the notification when user is not admin of group use bot"
+				+ "\n   {pn} noti [on | off]: turn on/off the notification when user is not admin of group use bot",
+      fr: "\n {pn} noti [on |  off] : activer/désactiver la notification lorsque l'utilisateur n'est pas administrateur du bot d'utilisation du groupe"
 		}
 	},
 
 	langs: {
+    fr: {
+      TurnOn : "Activé le mode, seul l'administrateur du groupe peut utiliser le bot",
+ TurnOff: "Désactivé le mode, seul l'administrateur du groupe peut utiliser le bot",
+ turnOnNoti: "Activé la notification lorsque l'utilisateur n'est pas administrateur du bot d'utilisation du groupe",
+ TurnOffNoti: "Désactivation de la notification lorsque l'utilisateur n'est pas administrateur du bot d'utilisation du groupe",
+ syntaxError: "Erreur de syntaxe, utilisez uniquement {pn} on ou {pn} off"
+    },
 		vi: {
 			turnedOn: "Đã bật chế độ chỉ quản trị viên nhóm mới có thể sử dụng bot",
 			turnedOff: "Đã tắt chế độ chỉ quản trị viên nhóm mới có thể sử dụng bot",
