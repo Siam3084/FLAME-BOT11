@@ -13,7 +13,7 @@ module.exports = {
 			vi: "Thêm tên gọi khác cho 1 lệnh bất kỳ trong nhóm của bạn",
 			en: "Add an alias for any command in your group"
 		},
-		category: "config",
+		category: "𝗖𝗨𝗦𝗧𝗢𝗠",
 		guide: {
 			vi: "  Lệnh dùng để thêm/xóa tên gọi khác cho 1 lệnh nào đó để tiện sử dụng trong nhóm chat của bạn"
 				+ "\n   {pn} add <tên gọi khác> <tên lệnh>: dùng để thêm tên gọi khác cho lệnh trong nhóm chat của bạn"
@@ -32,7 +32,16 @@ module.exports = {
 				+ "\n   {pn} [remove | rm] <alias> <command> -g: remove an alias for the command in the whole system (only bot admin)"
 				+ "\nExample:\n    {pn} rm ctrk customrankcard"
 				+ "\n\n   {pn} list: list all alias for commands in your group"
-				+ "\n   {pn} list -g: list all alias for commands in the whole system"
+				+ "\n   {pn} list -g: list all alias for commands in the whole system",
+      fr: "  Cette commande est utilisée pour ajouter/supprimer des pseudonymes pour n'importe quelle commande dans votre groupe"
+    + "\n   {pn} add <pseudonyme> <commande>: ajoute un pseudonyme pour la commande dans votre groupe"
+    + "\n   {pn} add <pseudonyme> <commande> -g: ajoute un pseudonyme pour la commande dans tout le système (seulement l'administrateur du bot)"
+    + "\nExemple:\n    {pn} add ctrk customrankcard"
+    + "\n\n   {pn} [remove | rm] <pseudonyme> <commande>: supprime un pseudonyme pour la commande dans votre groupe"
+    + "\n   {pn} [remove | rm] <pseudonyme> <commande> -g: supprime un pseudonyme pour la commande dans tout le système (seulement l'administrateur du bot)"
+    + "\nExemple:\n    {pn} rm ctrk customrankcard"
+    + "\n\n   {pn} list: liste tous les pseudonymes pour les commandes dans votre groupe"
+    + "\n   {pn} list -g: liste tous les pseudonymes pour les commandes dans tout le système"
 		}
 	},
 
@@ -71,7 +80,24 @@ module.exports = {
 			aliasList: "📜 List of other aliases for commands in the system:\n%1",
 			noAliasInSystem: "⚠️ There are no aliases in the system",
 			notExistAliasInGroup: "⚠️ Your group has not set any other aliases for commands",
-			aliasListInGroup: "📜 List of other aliases for commands in your group chat:\n%1"
+			aliasListInGroup: "📜 List of other aliases for commands in your group chat:\n%1"},
+    fr: {
+    commandNotExist: "❌ La commande \"%1\" n'existe pas",
+    aliasExist: "❌ Le pseudonyme \"%1\" existe déjà pour la commande \"%2\" dans le système",
+    addAliasSuccess: "✅ Ajout du pseudonyme \"%1\" pour la commande \"%2\" dans le système",
+    noPermissionAdd: "❌ Vous n'avez pas la permission d'ajouter le pseudonyme \"%1\" pour la commande \"%2\" dans le système",
+    aliasIsCommand: "❌ Le pseudonyme \"%1\" est identique à une autre commande dans le système",
+    aliasExistInGroup: "❌ Le pseudonyme \"%1\" existe déjà pour la commande \"%2\" dans ce groupe",
+    addAliasToGroupSuccess: "✅ Ajout du pseudonyme \"%1\" pour la commande \"%2\" dans votre groupe de discussion",
+    aliasNotExist: "❌ Le pseudonyme \"%1\" n'existe pas pour la commande \"%2\"",
+    removeAliasSuccess: "✅ Suppression du pseudonyme \"%1\" pour la commande \"%2\" dans le système",
+    noPermissionDelete: "❌ Vous n'avez pas la permission de supprimer le pseudonyme \"%1\" pour la commande \"%2\" dans le système",
+    noAliasInGroup: "❌ La commande \"%1\" n'a pas d'autre pseudonyme dans votre groupe",
+    removeAliasInGroupSuccess: "✅ Suppression du pseudonyme \"%1\" pour la commande \"%2\" dans votre groupe de discussion",
+    aliasList: "📜 Liste des autres pseudonymes pour les commandes dans le système:\n%1",
+    noAliasInSystem: "⚠ Il n'y a pas de pseudonymes dans le système",
+    notExistAliasInGroup: "⚠ Votre groupe n'a défini aucun autre pseudonyme pour les commandes",
+    aliasListInGroup: "📜 Liste des autres pseudonymes pour les commandes dans votre groupe de discussion:\n%1"
 		}
 	},
 

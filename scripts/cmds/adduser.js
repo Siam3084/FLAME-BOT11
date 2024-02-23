@@ -10,19 +10,32 @@ module.exports = {
 		role: 1,
 		shortDescription: {
 			vi: "Thêm thành viên vào box chat",
-			en: "Add user to box chat"
+			en: "Add user to box chat",
+      fr: "ajouter des utilisateurs au groupe"
 		},
 		longDescription: {
 			vi: "Thêm thành viên vào box chat của bạn",
-			en: "Add user to box chat of you"
+			en: "Add user to box chat of you",
+      fr: "ajouter des utilisateurs dans le groupe "
 		},
-		category: "box chat",
+		category: "𝗚𝗥𝗢𝗨𝗣",
 		guide: {
-			en: "   {pn} [link profile | uid]"
+			en: "   {pn} [link profile | uid]",
+      fr: "   {pn} [lien du profil | uid] "
 		}
 	},
 
 	langs: {
+    fr: {
+      alreadyInGroup: "Déjà dans le groupe",
+ successAdd: "- %1 membres ont été ajoutés avec succès au groupe",
+ failedAdd: "- Échec de l'ajout de %1 membres au groupe",
+ approve: "- Ajout de %1 membres à la liste d'approbation",
+ invalidLink: "Veuillez entrer un lien Facebook valide",
+ cannotGetUid: "Impossible d'obtenir l'UID de cet utilisateur",
+ linkNotExist: "Cette URL de profil n'existe pas",
+ cannotAddUser : "Le robot est bloqué ou cet utilisateur a empêché les étrangers de l'ajouter au groupe"
+ },
 		vi: {
 			alreadyInGroup: "Đã có trong nhóm",
 			successAdd: "- Đã thêm thành công %1 thành viên vào nhóm",

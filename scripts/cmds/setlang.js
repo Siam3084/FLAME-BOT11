@@ -9,13 +9,17 @@ module.exports = {
 		role: 0,
 		shortDescription: {
 			vi: "Cài đặt ngôn ngữ",
-			en: "Set default language"
+			en: "Set default language",
+      fr: "Définir la langue par défaut"
+
+
 		},
 		longDescription: {
 			vi: "Cài đặt ngôn ngữ của bot cho nhóm chat hiện tại hoặc tất cả các nhóm chat",
-			en: "Set default language of bot for current chat or all chats"
+			en: "Set default language of bot for current chat or all chats",
+      fr: "Définir la langue par défaut du bot pour le chat en cours ou pour tous les chats"
 		},
-		category: "owner",
+		category: "𝗖𝗨𝗦𝗧𝗢𝗠",
 		guide: {
 			vi: "   {pn} <language code ISO 639-1"
 				+ "\n   Ví dụ:"
@@ -24,11 +28,23 @@ module.exports = {
 			en: "\n   {pn} <language code ISO 639-1"
 				+ "\n   Example:"
 				+ "\n    {pn} en"
-				+ "\n    {pn} vi"
+				+ "\n    {pn} vi",
+      fr: "\n   {pn} <code langue ISO 639-1"
+       + " \n Exemple :"
+       + " \n {pn} en"
+       + " \n {pn} vi"
+       +"  \n  {pn} fr"
+    
 		}
 	},
 
 	langs: {
+    fr: {
+ setLangForAll: "Définir la langue par défaut du bot sur : %1",
+ setLangForCurrent: "Définir la langue par défaut pour le chat actuel : %1",
+ noPermission : "Seul l'administrateur du bot peut utiliser cette commande",
+ langNotFound : "Impossible de trouver la langue: %1"
+   },
 		vi: {
 			setLangForAll: "Đã cài đặt ngôn ngữ mặc định cho bot là: %1",
 			setLangForCurrent: "Đã cài đặt ngôn ngữ mặc định cho nhóm chat này là: %1",

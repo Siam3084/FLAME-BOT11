@@ -4,7 +4,7 @@ module.exports = {
 		version: "1.1",
 		author: "NTKhang",
 		countDown: 5,
-		role: 0,
+		role: 1,
 		shortDescription: {
 			vi: "Gỡ tin nhắn của bot",
 			en: "Unsend bot's message"
@@ -13,7 +13,7 @@ module.exports = {
 			vi: "Gỡ tin nhắn của bot",
 			en: "Unsend bot's message"
 		},
-		category: "box chat",
+		category: "𝗨𝗦𝗘𝗙𝗨𝗟",
 		guide: {
 			vi: "reply tin nhắn muốn gỡ của bot và gọi lệnh {pn}",
 			en: "reply the message you want to unsend and call the command {pn}"

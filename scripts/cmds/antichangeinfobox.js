@@ -2,7 +2,7 @@ const { getStreamFromURL, uploadImgbb } = global.utils;
 
 module.exports = {
 	config: {
-		name: "antichangeinfobox",
+		name: "antichgeinfobox",
 		version: "1.8",
 		author: "NTKhang",
 		countDown: 5,
@@ -15,7 +15,7 @@ module.exports = {
 			vi: "Bật tắt chức năng chống thành viên đổi thông tin box chat của bạn",
 			en: "Turn on/off anti change info box"
 		},
-		category: "box chat",
+		category: "𝗚𝗥𝗢𝗨𝗣",
 		guide: {
 			vi: "   {pn} avt [on | off]: chống đổi avatar box chat"
 				+ "\n   {pn} name [on | off]: chống đổi tên box chat"
