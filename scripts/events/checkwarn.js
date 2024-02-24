@@ -7,13 +7,17 @@ module.exports = {
 	},
 
 	langs: {
+    fr:{
+      warn: "Le membre %1 a déjà été averti 3 fois et a été banni de la boîte de discussion\n- Nom : %1\n- Uid : %2\n- Pour débannir, veuillez utiliser \"%3warn unban <uid>\"  commande (avec uid est l'uid de la personne que vous souhaitez débannir)",
+ needPermission: "Le robot a besoin de l'autorisation de l'administrateur pour expulser les membres bannis"
+    },
 		vi: {
 			warn: "Thành viên %1 đã bị cảnh cáo đủ 3 lần trước đó và bị ban khỏi box chat\n- Name: %1\n- Uid: %2\n- Để gỡ ban vui lòng sử dụng lệnh \"%3warn unban <uid>\" (với uid là uid của người muốn gỡ ban)",
 			needPermission: "Bot cần quyền quản trị viên để kick thành viên bị ban"
 		},
 		en: {
-			warn: "Member %1 has been warned 3 times before and has been banned from the chat box\n- Name: %1\n- Uid: %2\n- To unban, please use the \"%3warn unban <uid>\" command (with uid is the uid of the person you want to unban)",
-			needPermission: "Bot needs administrator permission to kick banned members"
+			warn: "Member %1 has already been warned 3 times and has been banned from the chat box\n- Name: %1\n- Uid: %2\n- To unban please use \"%3warn unban <uid>\"command (with uid is the uid of the person you want to unban)",
+ needPermission: "The bot needs admin permission to kick out banned members"
 		}
 	},
 
