@@ -31,7 +31,6 @@ module.exports = {
 			multiple1: "you",
 			multiple2: "you guys",
 			defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}\nHave a nice {session} 😊`
-		}
 	},
 		en: {
 			session1: "",
