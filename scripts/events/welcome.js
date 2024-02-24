@@ -122,6 +122,12 @@ module.exports = {
 										? getLang("session3")
 										: getLang("session4")
 						);
+					// Récupérer le nombre total de membres dans le groupe
+const memberCount = threadData.participantIDs.length;
+
+// Modifier le message de bienvenue pour inclure le numéro du nouveau membre
+welcomeMessage = welcomeMessage.replace(/\{memberCount\}/g, memberCount);
+											    
 
 					form.body = welcomeMessage;
 
