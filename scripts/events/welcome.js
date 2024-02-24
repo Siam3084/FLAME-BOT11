@@ -48,6 +48,7 @@ module.exports = {
           if (threadData.settings.sendWelcomeMessage == false)
             return;
           const threadName = threadData.threadName;
+	  const memberCount = threadData.participantIDs.length;
           const userName = [],
             mentions = [];
           let multiple = false;
@@ -77,6 +78,7 @@ module.exports = {
           };
           welcomeMessage = welcomeMessage
             .replace(/\{userName\}|\{userNameTag\}/g, userName.join(", "))
+            .replace(/\{memberCount\}/g, memberCount)
             .replace(/\{boxName\}|\{threadName\}/g, threadName)
             .replace(
               /\{multiple\}/g,
@@ -92,10 +94,6 @@ module.exports = {
                     ? getLang("session3")
                     : getLang("session4")
             );
-          const memberCount = threadData.participantIDs.length;
-
-// Modifier le message de bienvenue pour inclure le numéro du nouveau membre
-welcomeMessage = welcomeMessage.replace(/\{memberCount\}/g, memberCount);
 								
 
           form.body = welcomeMessage;
