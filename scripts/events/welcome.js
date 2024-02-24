@@ -33,14 +33,8 @@ module.exports = {
 			defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}\nHave a nice {session} 😊`
 		},
 		en: {
-			session1: "",
-			session2: "",
-			session3: "",
-			session4: "",
 			welcomeMessage: "Thank you for inviting me to the group!\nBot prefix: %1\nTo view the list of commands, please enter: %1help",
-			multiple1: "",
-			multiple2: "",
-			defaultWelcomeMessage: `╭━━━━━━━━━━━━━━╮\n┃𝖧𝗂 {userName}\n┃𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖺𝗆𝗈𝗇𝗀 𝗎𝗌{multiple} \n┃𝗒𝗈𝗎'𝗋𝖾  {memberCount}𝗍𝗁 𝗆𝖾𝗆𝖻𝖾𝗋 \n┃𝖨 𝖺𝗆 𝖨𝗍𝖺𝖼𝗁𝗂, 𝖾𝖽𝗂𝗍𝖾𝖽 𝖻𝗈𝗍{session}\n┃𝖻𝗒: 𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜\n┃━━━━━━━━━━━━━━━━━╮\n┃facebook.com/eliasbaruti45┃\n╰━━━━━━━━━━━━━━━━━╯{boxName}`
+			defaultWelcomeMessage: `╭━━━━━━━━━━━━━━╮\n┃𝖧𝗂 {userName}\n┃𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖺𝗆𝗈𝗇𝗀 𝗎𝗌 \n┃𝗒𝗈𝗎'𝗋𝖾  {memberCount}𝗍𝗁 𝗆𝖾𝗆𝖻𝖾𝗋 \n┃𝖨 𝖺𝗆 𝖨𝗍𝖺𝖼𝗁𝗂, 𝖾𝖽𝗂𝗍𝖾𝖽 𝖻𝗈𝗍\n┃𝖻𝗒: 𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜\n┃━━━━━━━━━━━━━━━━━╮\n┃facebook.com/eliasbaruti45┃\n╰━━━━━━━━━━━━━━━━━╯`
 		}
 	},
 
