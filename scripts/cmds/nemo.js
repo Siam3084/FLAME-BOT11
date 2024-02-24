@@ -7,7 +7,7 @@ aliases: ["Itachi"],
     version: 2.0,
     author: "OtinXSandip",
     longDescription: "ai with diff utilities",
-    category: "ai",
+    category: "𝗦𝗘𝗔𝗥𝗖𝗛",
     guide: {
       en: "{p}{n} questions\nsdxl\nimagine\nart\ngen\ndraw\nnsfw\nanime\nsay\nmusic\ncdp\nvideo",
     },
