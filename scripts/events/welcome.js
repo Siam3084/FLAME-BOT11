@@ -43,12 +43,12 @@ module.exports = {
 
         global.temp.welcomeEvent[threadID].joinTimeout = setTimeout(async function () {
           const dataAddedParticipants = global.temp.welcomeEvent[threadID].dataAddedParticipants;
+	  const memberCount = threadData.participantIDs.length;
           const threadData = await threadsData.get(threadID);
           const dataBanned = threadData.data.banned_ban || [];
           if (threadData.settings.sendWelcomeMessage == false)
             return;
           const threadName = threadData.threadName;
-	  const memberCount = threadData.participantIDs.length;
           const userName = [],
             mentions = [];
           let multiple = false;
