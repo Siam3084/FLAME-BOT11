@@ -18,8 +18,7 @@ module.exports = {
   },
 
   onStart: async ({ threadsData, message, event, api, getLang }) => {
-    const number = participantIDs.length - o; // Ajoutez cette ligne ici pour obtenir le numéro du nouveau membre
-    if (event.logMessageType == "log:subscribe")
+        if (event.logMessageType == "log:subscribe")
       return async function () {
         const hours = getTime("HH");
         const { threadID } = event;
@@ -48,6 +47,7 @@ module.exports = {
           if (threadData.settings.sendWelcomeMessage == false)
             return;
           const threadName = threadData.threadName;
+	  const number = participantIDs.length - o; // Ajoutez cette ligne ici pour obtenir le numéro du nouveau membre
           const userName = [],
             mentions = [];
           let multiple = false;
