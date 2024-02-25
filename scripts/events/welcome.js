@@ -13,7 +13,7 @@ module.exports = {
   langs: {
     en: {
       welcomeMessage: "𝘑𝘦 𝘮'𝘦𝘯 𝘳é𝘫𝘰𝘶𝘪𝘴 𝘥'ê𝘵𝘳𝘦 𝘪𝘯𝘷𝘪𝘵é 𝘥𝘢𝘯𝘴 𝘤𝘦 𝘨𝘳𝘰𝘶𝘱𝘦 !🎉\n𝘓𝘦 𝘱𝘳é𝘧𝘪𝘹𝘦 𝘥𝘶 𝘣𝘰𝘵 :%1\n𝘗𝘰𝘶𝘳 𝘷𝘰𝘪𝘳 𝘮𝘦𝘴 𝘤𝘰𝘮𝘮𝘢𝘯𝘥𝘦s, 𝘴𝘢𝘪𝘴𝘪𝘴𝘴𝘦𝘻 :%1𝘩𝘦𝘭𝘱",
-      defaultWelcomeMessage: `╭━━━━━━━━━━━━━━━╮\n┃𝖧𝗂 {userName} \n┃𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖺𝗆𝗈𝗇𝗀 𝗎𝗌 \n┃𝗒𝗈𝗎'𝗋𝖾 {memberCount} 𝗍𝗁 𝗆𝖾𝗆𝖻𝖾𝗋 \n┃𝖨 𝖺𝗆 𝖨𝗍𝖺𝖼𝗁𝗂, 𝖾𝖽𝗂𝗍𝖾𝖽 𝖻𝗈𝗍\n┃𝖻𝗒: 𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜\n┃━━━━━━━━━━━━━━━━━╮\n┃facebook.com/eliasbaruti45┃ \n╰━━━━━━━━━━━━━━━━━╯`
+      defaultWelcomeMessage: `╭━━━━━━━━━━━━━━━╮\n┃𝖧𝗂 {userName} \n┃𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖺𝗆𝗈𝗇𝗀 𝗎𝗌 \n┃𝗒𝗈𝗎'𝗋𝖾  𝗍𝗁 𝗆𝖾𝗆𝖻𝖾𝗋 \n┃𝖨 𝖺𝗆 𝖨𝗍𝖺𝖼𝗁𝗂, 𝖾𝖽𝗂𝗍𝖾𝖽 𝖻𝗈𝗍\n┃𝖻𝗒: 𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜\n┃━━━━━━━━━━━━━━━━━╮\n┃facebook.com/eliasbaruti45┃ \n╰━━━━━━━━━━━━━━━━━╯`
     }
   },
 
@@ -43,7 +43,6 @@ module.exports = {
 
         global.temp.welcomeEvent[threadID].joinTimeout = setTimeout(async function () {
           const threadData = await threadsData.get(threadID); // Correction: moved this line up
-          const memberCount = threadData.participantIDs.length;
           const dataBanned = threadData.data.banned_ban || [];
           if (threadData.settings.sendWelcomeMessage == false)
             return;
@@ -77,7 +76,6 @@ module.exports = {
           };
           welcomeMessage = welcomeMessage
             .replace(/\{userName\}|\{userNameTag\}/g, userName.join(", "))
-            .replace(/\{memberCount\}/g, memberCount)
             .replace(/\{boxName\}|\{threadName\}/g, threadName)
             .replace(
               /\{multiple\}/g,
