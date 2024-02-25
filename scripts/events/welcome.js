@@ -42,9 +42,8 @@ module.exports = {
         clearTimeout(global.temp.welcomeEvent[threadID].joinTimeout);
 
         global.temp.welcomeEvent[threadID].joinTimeout = setTimeout(async function () {
-          const dataAddedParticipants = global.temp.welcomeEvent[threadID].dataAddedParticipants;
-	  const memberCount = threadData.participantIDs.length;
-          const threadData = await threadsData.get(threadID);
+          const threadData = await threadsData.get(threadID); // Correction: moved this line up
+          const memberCount = threadData.participantIDs.length;
           const dataBanned = threadData.data.banned_ban || [];
           if (threadData.settings.sendWelcomeMessage == false)
             return;
