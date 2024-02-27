@@ -37,7 +37,7 @@ module.exports = {
         return;
       }
 
-      const response = await axios.get(`https://sandipbaruwal.onrender.com/gpt?prompt=${encodeURIComponent`);
+      const response = await axios.get(`https://sandipbaruwal.onrender.com/gpt?prompt=${encodeURIComponent(prompt)}`);
       const answer = response.data.answer;
 
       await message.reply({ body: `━━━━━━━━━━━━━\n${answer}\n╭━━━━━━━━━━╮\n┃𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜┃\n╰━━━━━━━━━━╯` });
