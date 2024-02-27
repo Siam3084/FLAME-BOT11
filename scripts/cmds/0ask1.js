@@ -6,13 +6,13 @@ const Prefixes = [
   'nemoo',
   '+ai',
   'nemo',
-  'ai',
+  'itachi',
   'ask',
 ];
 
 module.exports = {
   config: {
-    name: "ask",
+    name: "ai",
     version: 1.0,
     author: "OtinXSandip",
     longDescription: "AI",
