@@ -30,7 +30,7 @@ module.exports = {
       const keySearchs = keySearch.substr(0, keySearch.indexOf('-')).trim();
       const numberSearch = parseInt(keySearch.split("-").pop().trim()) || 6;
 
-      const res = await axios.get(`https://api-dien.kira1011.repl.co/pinterest?search=${encodeURIComponent(keySearchs)}`);
+      const res = await axios.get(` https://api-samir.onrender.com/pinterest?query=Cat&number=2`);
       const data = res.data.data;
       const imgData = [];
 
