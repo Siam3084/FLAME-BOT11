@@ -14,7 +14,7 @@ module.exports = {
     version: 1.0,
     author: "Aryan Chauhan",
     longDescription: "AI",
-    category: "𝗨𝗦𝗘𝗥𝗙𝗨𝗟",
+    category: "𝗦𝗘𝗔𝗥𝗖𝗛",
     guide: {
       en: "{p} questions",
     },
@@ -34,7 +34,7 @@ module.exports = {
       }
 
 
-      const response = await axios.get(`https://AryanAPI.replit.app/gpt?prompt=${encodeURIComponent(prompt)}`);
+      const response = await axios.get(`https://sandipbaruwal.onrender.com/gpt?prompt=${encodeURIComponent(prompt)}`);
       const answer = response.data.answer;
 
  
