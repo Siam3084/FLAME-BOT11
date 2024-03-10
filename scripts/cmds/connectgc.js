@@ -11,7 +11,7 @@ module.exports = {
             vi: "",
             en: "connect the group chat into one"
         },
-        category: "owner",
+        category: "𝗖𝗨𝗦𝗧𝗢𝗠",
         guide: {
             vi: "   {pn} <message> gcUid",
             en: "   {pn} <message> gcUid"
