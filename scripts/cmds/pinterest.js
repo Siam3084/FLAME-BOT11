@@ -16,7 +16,7 @@ module.exports = {
     longDescription: {
       en: ""
     },
-    category: "Search",
+    category: "𝗦𝗘𝗔𝗥𝗖𝗛",
     guide: {
       en: "{prefix}pinterest <search query> -<number of images>"
     }
