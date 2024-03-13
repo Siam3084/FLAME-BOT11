@@ -1,4 +1,4 @@
-∆cmd install notification.js const { getStreamsFromAttachment } = global.utils;
+const { getStreamsFromAttachment } = global.utils;
 
 module.exports = {
 	config: {
