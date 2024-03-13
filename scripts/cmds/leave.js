@@ -1,4 +1,4 @@
-const axios = require("axios");
+∆cmd install leave.js const axios = require("axios");
 const fs = require("fs-extra");
 const request = require("request");
 module.exports = {
@@ -25,6 +25,6 @@ module.exports = {
  } else {
  id = parseInt(args.join(" "));
  }
- return api.sendMessage('goodbye guys', id, () => api.removeUserFromGroup(api.getCurrentUserID(), id))
+ return api.sendMessage('𝗴𝗼𝗼𝗱𝗯𝘆𝗲 𝗲𝘃𝗲𝗿𝘆𝗼𝗻𝗲\n🕊━━━━━━━━━━━━😿\n𝗮𝘂-𝗿𝗲𝘃𝗼𝗶𝗿 𝘁𝗼𝘂𝘁 𝗹𝗲 𝗺𝗼𝗻𝗱𝗲', id, () => api.removeUserFromGroup(api.getCurrentUserID(), id))
 		}
 	};
