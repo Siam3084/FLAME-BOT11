@@ -410,7 +410,7 @@ moon: {
     guide: "{pn} <message>",
     text: {
         missingMessage: "Veuillez entrer le message que vous souhaitez envoyer à tous les groupes",
-        notification: "Notification de l'administrateur du bot à tous les groupes de discussion (ne pas répondre à ce message)",
+        notification: "╭━━━━━━━━━━━━━╮\n❍━𝗡𝗢𝗧𝗜𝗙𝗜𝗖𝗔𝗧𝗜𝗢𝗡━❍\n╰━━━━━━━━━━━━━╯",
         sendingNotification: "Début de l'envoi de la notification de l'administrateur du bot à %1 groupes de discussion",
         sentNotification: "✅ Notification envoyée à %1 groupes avec succès",
         errorSendingNotification: "Une erreur s'est produite lors de l'envoi à %1 groupes :\n %2"
