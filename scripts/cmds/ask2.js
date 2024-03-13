@@ -5,7 +5,7 @@ const Prefixes = [
   'ai',
   'chatgpt',
   'gpt',
-  '.ai',
+  'itachi',
 ];
 
 module.exports = {
@@ -29,7 +29,6 @@ module.exports = {
       }
       const prompt = event.body.substring(prefix.length).trim();
    if (!prompt) {
-        await message.reply("👨🏻‍💻");
         return;
       }
 
