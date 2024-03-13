@@ -3,7 +3,7 @@ const axios = require('axios');
 const Prefixes = [
   '/ai',
   'kim',
-  'Nemo',
+  'itachi',
   '+ai',
   'nemo',
   'ai',
@@ -20,9 +20,16 @@ module.exports = {
     guide: {
       en: "{p} questions",
     },
-  },
-  onStart: async function () {},
-  onChat: async function ({ api, event, args, message }) {
+},
+  langs: {
+ en: { prompt: "𝗉𝗅𝖾𝖺𝗌𝖾 𝖺𝗌𝗄 𝖺 𝗊𝗎𝖾𝗌𝗍𝗂𝗈𝗇!\n𝗜𝘁𝗮𝗰𝗵𝗶 𝗐𝗂𝗅𝗅 𝖺𝗇𝗌𝗐𝖾𝗋!👨🏾‍💻",
+ response: "𝗉𝗅𝖾𝖺𝗌𝖾! 𝗉𝗅𝖾𝖺𝗌𝖾 𝗐𝖺𝗂𝗍...\n𝖨 𝗐𝗂𝗅𝗅 𝖺𝗇𝗌𝗐𝖾𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗌𝗍𝗂𝗈𝗇👨🏾‍💻\n𝖾𝗅𝗂𝖺𝗌.𝖻𝖺𝗋𝗎𝗍𝗂"
+ }, 
+fr: { prompt: "𝗏𝖾𝗎𝗂𝗅𝗅𝖾𝗓 𝗉𝗈𝗌𝖾𝗋 𝗎𝗇𝖾 𝗊𝗎𝖾𝗌𝗍𝗂𝗈𝗇!\n𝗜𝘁𝗮𝗰𝗵𝗶 𝗏𝖺 𝗋é𝗉𝗈𝗇𝖽𝗋𝖾!👨🏾‍💻",
+ response: "𝗌𝗏𝗉! 𝗏𝖾𝗎𝗂𝗅𝗅𝖾𝗓 𝗉𝖺𝗍𝗂𝖾𝗇𝗍𝖾𝗋...\n𝗃𝖾 𝗋é𝗉𝗈𝗇𝖽𝗌 à 𝗍𝖺 𝗊𝗎𝖾𝗌𝗍𝗂𝗈𝗇👨🏾‍💻\n𝖾𝗅𝗂𝖺𝗌.𝖻𝖺𝗋𝗎𝗍𝗂" 
+} 
+},
+  onStart: async function ({getLang,value,}){}, onChat: async function ({ api, event, args, message,getLang,value, }){
     try {
       // Triez les préfixes par longueur décroissante
       Prefixes.sort((a, b) => b.length - a.length);
@@ -33,7 +40,7 @@ module.exports = {
       }
       const prompt = event.body.substring(prefix.length).trim();
       if (!prompt) {
-        await message.reply("𝗉𝗅𝖾𝖺𝗌𝖾 𝖺𝗌𝗄 𝖺 𝗊𝗎𝖾𝗌𝗍𝗂𝗈𝗇!\n𝖨𝗍𝖺𝖼𝗁𝗂 𝗐𝗂𝗅𝗅 𝖺𝗇𝗌𝗐𝖾𝗋!🫧\n𝖾𝗅𝗅𝗂𝖺𝗌.𝖻𝖺𝗋𝗎𝗍𝗂");
+        await message.reply(getLang(value? "prompt":"prompt"));
         return;
       }
 
