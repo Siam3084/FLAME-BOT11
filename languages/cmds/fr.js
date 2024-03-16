@@ -366,7 +366,7 @@ grouptag: {
         infoGroupTag: "📑 | Nom du groupe : \"%1\"\n👥 | Nombre de membres : %2\n👨‍👩‍👧‍👦 | Liste des membres :\n %3"
     }
  },
-  help3: {
+  help1: {
     shortDescription: "Voir l'utilisation des commandes",
     longDescription: "Voir l'utilisation des commandes",
     guide: "{pn} [vide | <numéro de page> | <nom de la commande>]",
