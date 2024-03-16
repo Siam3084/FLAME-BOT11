@@ -45,11 +45,11 @@ module.exports = {
 
       Object.keys(categories).forEach((category) => {
         if (category !== "info") {
-          msg += `\n╭━━━O『${category.toUpperCase()}』`;
+          msg += `\n╭━━━⦿『${category.toUpperCase()}』`;
           const names = categories[category].commands.sort();
 
           for (let i = 0; i < names.length; i += 1) {
-            const cmds = names.slice(i, i + 1).map((item) => `●${item}`);
+            const cmds = names.slice(i, i + 1).map((item) => `🍁${item}`);
             msg += `\n┃ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
           msg +=`\n╰━━━━━━━━━━━❍`;
@@ -61,7 +61,7 @@ module.exports = {
       msg += `\n╭ ───── ╮\n│ 𝗚𝗨𝗜𝗗𝗘  │\n╰ ───── ╯\n`;
 
 msg+=`𝗣𝗢𝗨𝗥 𝗦𝗔𝗩𝗢𝗜𝗥 𝗨𝗦𝗘𝗥 𝗗𝗘 \n𝗖𝗘𝗦 ${totalCommands}𝗖𝗠𝗗𝗘𝗦 ,𝗦𝗔𝗜𝗦𝗜𝗦𝗦𝗘𝗭 : \n𝗛𝗘𝗟𝗣 + 𝗡𝗢𝗠 𝗗𝗘 𝗟𝗔 𝗖𝗠𝗗𝗘 \n𝗘𝗫: ∆help quiz \n━━━━━━━━━━━━━━`
-      msg += `\n╭✿━━━━━━━━━✿╮\n┃  𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜  ┃\n╰✿━━━━━━━━━✿╯\nfacebook.com/elias.baruti45`;
+      msg += `\n╭✿━━━━━━━━━✿╮\n┃  𝗘𝗟𝗜𝗔𝗦 𝗕𝗔𝗥𝗨𝗧𝗜  ┃\n╰✿━━━━━━━━━✿╯`;
 
       await message.reply(msg);
     } else {
@@ -78,21 +78,21 @@ msg+=`𝗣𝗢𝗨𝗥 𝗦𝗔𝗩𝗢𝗜𝗥 𝗨𝗦𝗘𝗥 𝗗𝗘 \n𝗖
         const guideBody = configCommand.guide?.en || "Aucun guide disponible🤷🏾‍♂.";
         const usage = guideBody.replace(/{p}/g, prefix).replace(/{n}/g, configCommand.name);
 
-        const response = ` ✲═══════.〖✨NOM✨〗.═══════✲
-   │ ${configCommand.name}
-  ✲══════〖✨INFOS✨〗══════✲
-   │ ✨Description✨ : ${longDescription}
-|✨Autres noms✨ : ${configCommand.aliases ? configCommand.aliases.join(", ") : "Ne pas avoir"}
-   │ Autres noms dans votre groupe : Je n'en ai pas
-   │ ✨Version✨ : ${configCommand.version || "1.0"}
-   │ ✨Rôle✨ : ${roleText}
-   │ Temps par commande : ${configCommand.countDown || 1}s
-   │ ✨Auteur✨ : ${author}
-   ├── ✨Utilisation✨
-   │ ${usage} 
-   ├── Notes : ✨𝘔𝘖𝘐 𝘌𝘙𝘞𝘐𝘕.𝘚𝘔𝘐𝘛𝘏,𝘑𝘌 𝘚𝘜𝘐𝘚 𝘓'𝘜𝘕 𝘋𝘌 𝘔𝘌𝘐𝘓𝘓𝘌𝘜𝘙𝘚 𝘉𝘖𝘛𝘚 𝘔𝘌𝘚𝘚𝘌𝘕𝘎𝘌𝘙 É𝘋𝘐𝘛É 𝘗𝘈𝘙 𝘌𝘓𝘐𝘈𝘚 𝘉𝘈𝘙𝘜𝘛𝘐 𝘝𝘐𝘈 𝘎𝘖𝘈𝘛𝘒𝘖𝘛V2✨\n
-    https://www.facebook.com/elias.baruti45
-   ✲═══.〖✨𝘌𝘓𝘐𝘈𝘚𝘉𝘈𝘙𝘜𝘛𝘐✨〗.═══✲`;
+        const response = `╭━━━━━〘INFOS〙━━━━━❍
+┃━━━━❍〘 ${configCommand.name}〙
+┃𝗱𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻➠ ${longDescription}
+┃
+┃𝗮𝘂𝘁𝗿𝗲𝘀𝗡𝗼𝗺𝘀/𝗼𝘁𝗵𝗲𝗿𝘀𝗡𝗮𝗺𝗲𝘀:
+┃➠ ${configCommand.aliases ? configCommand.aliases.join(", ") : "Ne pas avoir"}
+┃
+┃𝗩𝗲𝗿𝘀𝗶𝗼𝗻:➠ ${configCommand.version || "1.0"}
+┃𝗥ô𝗹𝗲 :➠ ${roleText}
+┃
+┃𝘁𝗲𝗺𝗽𝘀𝗣𝗮𝗿𝗖𝗼𝗺𝗺𝗮𝗻𝗱/𝗧𝗶𝗺𝗲𝗣𝗲𝗿𝗖𝗺𝗱: 
+┃➠ ${configCommand.countDown || 1}s
+┃𝗔𝘂𝘁𝗲𝘂𝗿/𝗮𝘂𝘁𝗵𝗼𝗿: ➠  ${author}
+┃
+╭━━━━━〘𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝘁𝗶𝗼𝗻 〙━━━╮\n${usage}╰━━━━━━━━-━-━━━━━━━━╯`;
 
         await message.reply(response);
       }
