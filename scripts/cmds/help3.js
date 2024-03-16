@@ -12,7 +12,7 @@ const doNotDelete = "";
 
 module.exports = {
   config: {
-    name: "help",
+    name: "help1",
     version: "1.17",
     author: "NTKhang",
     countDown: 5,
